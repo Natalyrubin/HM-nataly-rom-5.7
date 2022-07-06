@@ -76,3 +76,8 @@ blkScr.style.backgroundColor = "#433840";
 blkScr.style.border = "2px rgb(214, 183, 7) double";
 blkScr.style.borderRadius = "5px";
 //end black screen
+
+//buttons
+container.innerHTML += '<div id = "buttons"></div>';
+let buttons = document.getElementById("buttons");
+buttons.innerHTML = '<div class = "buttonCol"></div>';
