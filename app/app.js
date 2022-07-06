@@ -80,4 +80,39 @@ blkScr.style.borderRadius = "5px";
 //buttons
 container.innerHTML += '<div id = "buttons"></div>';
 let buttons = document.getElementById("buttons");
-buttons.innerHTML = '<div class = "buttonCol"></div>';
+buttons.innerHTML =
+  '<div class="button-col1"></div><div class="button-col2"></div><div class="button-col3"></div><div class="button-col4"></div>';
+
+// '<div class = "buttonCol">% V CE ON/C</div><div class = "buttonCol">7 4 1 0</div><div class = "buttonCol">8 5 2 .</div><div class = "buttonCol">9 6 3 <sup>+</sup>/<sub>-</sub></div><div class = "buttonCol">/ * - +</div>';
+let buttCol1 = document.getElementsByClassName("button-col1");
+let buttCol2 = document.getElementsByClassName("button-col2");
+let buttCol3 = document.getElementsByClassName("button-col3");
+let buttCol4 = document.getElementsByClassName("button-col4");
+buttCol1 = ["%", "7", "8", "9", "/"];
+buttCol2 = ["V", "4", "5", "6", "*"];
+buttCol3 = ["CE", "1", "2", "3", "-"];
+buttCol4 = ["ON/C", "0", ".", "<sup>+</sup>/<sub>-</sub>", "+"];
+
+buttons.style.background = "rgb(253,234,109)";
+buttons.style.background =
+  "radial-gradient(circle, rgba(253,234,109,1) 78%, rgba(239,205,0,1) 95%)";
+buttons.style.height = "325px";
+buttons.style.width = "325px";
+buttons.style.display = "flex";
+buttons.style.flexDirection = "column";
+buttons.style.flexWrap = "wrap";
+buttons.style.Height = "100%";
+buttons.style.justifyContent = "start";
+
+for (let x = 0; x < buttCol1.length; x++) {
+  buttons.innerHTML += buttCol1[x];
+}
+for (let x = 0; x < buttCol1.length; x++) {
+  buttons.innerHTML += buttCol2[x];
+}
+for (let x = 0; x < buttCol1.length; x++) {
+  buttons.innerHTML += buttCol3[x];
+}
+for (let x = 0; x < buttCol1.length; x++) {
+  buttons.innerHTML += buttCol4[x];
+}
