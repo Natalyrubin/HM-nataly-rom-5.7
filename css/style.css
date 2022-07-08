@@ -1,3 +1,8 @@
+@font-face { 
+    font-family: calculator;
+    src: url(./Calculator.ttf);
+}
+
 .num{
      border: 1px solid black;
     border-radius: 10px;
