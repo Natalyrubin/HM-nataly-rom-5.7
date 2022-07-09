@@ -105,7 +105,3 @@ for (let x = 9; x > 0; x--) {
 }
 buttons.innerHTML +=
   '<div class = "last-row"><span id = "zero">0 </span><span id = "dot">.</span><span id = "PM"><sup>+</sup>/<sub>-<sub></span> </div><div id = "equal"> = </div>';
-let leftBut = ["%", "V", "CE", "ON/C"];
-for (y = 0; y < leftBut.length; y++) {
-  buttons.innerHTML += '<div id="left">' + leftBut[y] + "</div>";
-}
