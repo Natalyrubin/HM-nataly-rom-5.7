@@ -80,7 +80,6 @@ blkScr.style.borderRadius = "5px";
 //buttons
 container.innerHTML += '<div id = "buttons"></div>';
 let buttons = document.getElementById("buttons");
-
 for (let x = 9; x > 0; x--) {
   // this was responsable for making the row go down
   if (x % 3 === 0) {
@@ -103,3 +102,5 @@ for (let x = 9; x > 0; x--) {
   buttons.style.gap = "10px";
   buttons.style.marginTop = "50px";
 }
+buttons.innerHTML +=
+  '<div class = "last row"><span id = "zero">0 </span><span id = "dot">.</span><span id = "PM"><sup>+</sup>/<sub>-<sub></span> </div> <div id = "equal"> = </div>';
