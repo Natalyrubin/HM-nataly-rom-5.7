@@ -100,7 +100,12 @@ for (let x = 9; x > 0; x--) {
   buttons.style.display = "grid";
   buttons.style.textAlign = "center";
   buttons.style.gap = "10px";
-  buttons.style.marginTop = "50px";
+  buttons.style.marginTop = "20px";
+  buttons.style.height = "250px";
 }
 buttons.innerHTML +=
-  '<div class = "last-row"><span id = "zero">0 </span><span id = "dot">.</span><span id = "PM"><sup>+</sup>/<sub>-<sub></span> </div> <div id = "equal"> = </div>';
+  '<div class = "last-row"><span id = "zero">0 </span><span id = "dot">.</span><span id = "PM"><sup>+</sup>/<sub>-<sub></span> </div><div id = "equal"> = </div>';
+let leftBut = ["%", "V", "CE", "ON/C"];
+for (y = 0; y < leftBut.length; y++) {
+  buttons.innerHTML += '<div id="left">' + leftBut[y] + "</div>";
+}
