@@ -103,4 +103,4 @@ for (let x = 9; x > 0; x--) {
   buttons.style.marginTop = "50px";
 }
 buttons.innerHTML +=
-  '<div class = "last row"><span id = "zero">0 </span><span id = "dot">.</span><span id = "PM"><sup>+</sup>/<sub>-<sub></span> </div> <div id = "equal"> = </div>';
+  '<div class = "last-row"><span id = "zero">0 </span><span id = "dot">.</span><span id = "PM"><sup>+</sup>/<sub>-<sub></span> </div> <div id = "equal"> = </div>';
